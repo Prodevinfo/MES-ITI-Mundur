@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal | Dr. P.K. Abdul Ghafoor Memorial M.E.S. Private ITI, Mundur</title>
+  <meta name="description" content="Secure Administrator Dashboard for M.E.S. Private ITI Mundur.">
+  <link rel="stylesheet" href="../css/styles.css?v=1.2">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.344.0/dist/umd/lucide.min.js"></script>
+</head>
+<body style="background: var(--color-bg); overflow-x: hidden;">
+
+  <!-- LOGIN VIEW WRAPPER -->
+  <div class="admin-login-wrapper" id="admin-login-wrapper">
+    <div class="admin-login-card">
+      <div class="admin-login-header">
+        <img src="../assets/images/mes-logo.png" alt="MES Crest Logo">
+        <h2>MES Private ITI</h2>
+        <p>Admin Portal Sign In</p>
+      </div>
+      <form id="admin-login-form" novalidate>
+        <div class="form-group">
+          <input type="text" id="admin-username" class="form-control" placeholder=" " required value="admin">
+          <label for="admin-username" class="form-label">Username</label>
+        </div>
+        <div class="form-group" style="margin-bottom: 2rem;">
+          <input type="password" id="admin-password" class="form-control" placeholder=" " required value="password">
+          <label for="admin-password" class="form-label">Password</label>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.85rem 0;">
+          Sign In <i data-lucide="log-in" style="width:16px;height:16px;margin-left:0.5rem;"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- DASHBOARD CONTAINER (Hidden initially) -->
+  <div class="admin-dashboard-container" id="admin-dashboard-container" style="display: none;">
+    <!-- Mobile Sidebar Overlay -->
+    <div class="admin-sidebar-overlay" id="admin-sidebar-overlay"></div>
+
+    <!-- Sidebar Panel -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+      <div class="admin-sidebar-header">
+        <a href="../index.html" class="admin-sidebar-brand">
+          <img src="../assets/images/mes-logo.png" alt="MES Logo">
+          <div class="brand-text">
+            <span class="title">MES Pvt ITI</span>
+            <span class="subtitle">Admin Panel</span>
+          </div>
+        </a>
+      </div>
+      
+      <div class="admin-sidebar-menu">
+        <div class="admin-menu-item active" data-tab="overview">
+          <i data-lucide="layout-dashboard"></i>
+          <span>Overview</span>
+        </div>
+        <div class="admin-menu-item" data-tab="admissions">
+          <i data-lucide="file-text"></i>
+          <span>Admissions</span>
+        </div>
+        <div class="admin-menu-item" data-tab="alumni">
+          <i data-lucide="users"></i>
+          <span>Alumni Network</span>
+        </div>
+        <div class="admin-menu-item" data-tab="announcements">
+          <i data-lucide="megaphone"></i>
+          <span>Announcements</span>
+        </div>
+        <div class="admin-menu-item" data-tab="contact">
+          <i data-lucide="mail"></i>
+          <span>Contact Messages</span>
+        </div>
+      </div>
+
+      <div class="admin-sidebar-footer">
+        <button class="admin-logout-btn" id="admin-logout-btn">
+          <i data-lucide="log-out"></i>
+          <span>Sign Out</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Panel -->
+    <div class="admin-main-wrapper">
+      <!-- Topbar Header -->
+      <header class="admin-topbar">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <button class="admin-mobile-menu-btn" id="admin-mobile-menu-btn" aria-label="Toggle Menu">
+            <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+          </button>
+          <div class="admin-topbar-title">
+            <h2 id="admin-current-tab-title">Dashboard Overview</h2>
+          </div>
+        </div>
+        
+        <div class="admin-user-profile">
+          <div class="admin-user-info">
+            <div class="admin-user-name">Prof. Latheef</div>
+            <div class="admin-user-role">Administrator</div>
+          </div>
+          <div class="admin-avatar">L</div>
+        </div>
+      </header>
+
+      <!-- Content Body Area -->
+      <main class="admin-content-body">
+        
+        <!-- 1. OVERVIEW TAB PANE -->
+        <section class="admin-tab-pane active" id="pane-overview">
+          <div class="admin-stats-grid">
+            <div class="admin-stat-card">
+              <div class="admin-stat-info">
+                <span class="admin-stat-label">Total Enquiries</span>
+                <span class="admin-stat-value" id="stat-enquiries">14</span>
+              </div>
+              <div class="admin-stat-icon icon-blue">
+                <i data-lucide="file-text"></i>
+              </div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-info">
+                <span class="admin-stat-label">Pending Alumni</span>
+                <span class="admin-stat-value" id="stat-alumni">3</span>
+              </div>
+              <div class="admin-stat-icon icon-gold">
+                <i data-lucide="users"></i>
+              </div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-info">
+                <span class="admin-stat-label">Active Notices</span>
+                <span class="admin-stat-value" id="stat-notices">3</span>
+              </div>
+              <div class="admin-stat-icon icon-green">
+                <i data-lucide="megaphone"></i>
+              </div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-info">
+                <span class="admin-stat-label">Contact Mail</span>
+                <span class="admin-stat-value" id="stat-mail">8</span>
+              </div>
+              <div class="admin-stat-icon icon-purple">
+                <i data-lucide="mail"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="admin-dashboard-grid">
+            <!-- Recent Enquiries -->
+            <div class="admin-card">
+              <div class="admin-card-header">
+                <h3>Recent Admission Enquiries</h3>
+                <button class="btn btn-ghost" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;" onclick="document.querySelector('[data-tab=admissions]').click()">View All</button>
+              </div>
+              <div class="admin-card-body" style="padding: 0;">
+                <div class="admin-table-wrap">
+                  <table class="admin-table">
+                    <thead>
+                      <tr>
+                        <th>Trainee</th>
+                        <th>Trade Preference</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody id="recent-admissions-tbody">
+                      <!-- Populated dynamically -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="admin-card">
+              <div class="admin-card-header">
+                <h3>Quick Actions</h3>
+              </div>
+              <div class="admin-card-body" style="display: flex; flex-direction: column; gap: 1rem;">
+                <button class="btn btn-primary" style="width: 100%; justify-content: center;" onclick="document.querySelector('[data-tab=announcements]').click()">
+                  <i data-lucide="plus" style="width:16px;height:16px;margin-right:0.5rem;"></i> Post New Announcement
+                </button>
+                <a href="../index.html" target="_blank" class="btn btn-secondary" style="width: 100%; justify-content: center; text-decoration: none;">
+                  <i data-lucide="external-link" style="width:16px;height:16px;margin-right:0.5rem;"></i> Visit Live Site
+                </a>
+                <a href="sitemap.html" class="btn btn-outline" style="width: 100%; justify-content: center; text-decoration: none; color: var(--color-primary); border-color: var(--color-primary);">
+                  <i data-lucide="layout-grid" style="width:16px;height:16px;margin-right:0.5rem;"></i> View Sitemap
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. ADMISSIONS TAB PANE -->
+        <section class="admin-tab-pane" id="pane-admissions">
+          <div class="admin-toolbar">
+            <div class="admin-search-wrapper">
+              <i data-lucide="search"></i>
+              <input type="text" class="admin-search-input" id="admissions-search" placeholder="Search by name or phone...">
+            </div>
+            <div>
+              <select class="admin-filter-select" id="admissions-trade-filter">
+                <option value="all">All Trades</option>
+                <option value="electrician">Electrician</option>
+                <option value="civil">Draughtsman Civil</option>
+                <option value="electronic">Electronic Mechanic</option>
+                <option value="wireman">Wireman</option>
+                <option value="plumber">Plumber</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="admin-card" style="padding: 0;">
+            <div class="admin-table-wrap">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Applicant Name</th>
+                    <th>Phone</th>
+                    <th>Trade Preference</th>
+                    <th>Submit Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="admissions-table-body">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. ALUMNI TAB PANE -->
+        <section class="admin-tab-pane" id="pane-alumni">
+          <div class="admin-toolbar">
+            <div class="admin-search-wrapper">
+              <i data-lucide="search"></i>
+              <input type="text" class="admin-search-input" id="alumni-search" placeholder="Search by name or company...">
+            </div>
+            <div>
+              <select class="admin-filter-select" id="alumni-trade-filter">
+                <option value="all">All Trades</option>
+                <option value="electrician">Electrician</option>
+                <option value="civil">Draughtsman Civil</option>
+                <option value="electronic">Electronic Mechanic</option>
+                <option value="wireman">Wireman</option>
+                <option value="plumber">Plumber</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="admin-card" style="padding: 0;">
+            <div class="admin-table-wrap">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Alumnus Name</th>
+                    <th>Batch</th>
+                    <th>Trade</th>
+                    <th>Current Company</th>
+                    <th>Designation</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="alumni-table-body">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. ANNOUNCEMENTS TAB PANE -->
+        <section class="admin-tab-pane" id="pane-announcements">
+          <div class="admin-dashboard-grid" style="grid-template-columns: 1fr 1.5fr;">
+            <!-- Create Form -->
+            <div class="admin-card">
+              <div class="admin-card-header">
+                <h3>Post Announcement</h3>
+              </div>
+              <div class="admin-card-body">
+                <form id="announcement-form" novalidate>
+                  <div class="admin-form-group">
+                    <label class="admin-form-label" for="notice-title">Title *</label>
+                    <input type="text" id="notice-title" class="admin-form-control" required placeholder="e.g. Admissions open for 2026-2027">
+                  </div>
+                  <div class="admin-form-group">
+                    <label class="admin-form-label" for="notice-category">Category *</label>
+                    <select id="notice-category" class="admin-form-control" required>
+                      <option value="admission">Admission</option>
+                      <option value="exam">Exams</option>
+                      <option value="placement">Placement</option>
+                      <option value="event">Event</option>
+                    </select>
+                  </div>
+                  <div class="admin-form-group">
+                    <label class="admin-form-label" for="notice-desc">Brief Details *</label>
+                    <textarea id="notice-desc" class="admin-form-control" style="height: 100px; resize: none;" required placeholder="Brief description to show in notification drawer..."></textarea>
+                  </div>
+                  <div class="admin-form-group">
+                    <label class="admin-form-label" for="notice-link">Action Link *</label>
+                    <select id="notice-link" class="admin-form-control" required>
+                      <option value="admissions.html">Admissions Portal</option>
+                      <option value="placements.html">Placements Page</option>
+                      <option value="blog.html">Blog / Event Page</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:0.75rem 0;">
+                    Publish Announcement <i data-lucide="send" style="width:16px;height:16px;margin-left:0.5rem;"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- List Active Notices -->
+            <div class="admin-card">
+              <div class="admin-card-header">
+                <h3>Active Notices & Alerts</h3>
+              </div>
+              <div class="admin-card-body" style="padding: 0;">
+                <div class="admin-table-wrap">
+                  <table class="admin-table">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Link Target</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="announcements-table-body">
+                      <!-- Populated dynamically -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. CONTACT MESSAGES TAB PANE -->
+        <section class="admin-tab-pane" id="pane-contact">
+          <div class="admin-toolbar">
+            <div class="admin-search-wrapper">
+              <i data-lucide="search"></i>
+              <input type="text" class="admin-search-input" id="contact-search" placeholder="Search by name, email, or message...">
+            </div>
+          </div>
+
+          <div class="admin-card" style="padding: 0;">
+            <div class="admin-table-wrap">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Sender Name</th>
+                    <th>Email Address</th>
+                    <th>Subject</th>
+                    <th>Message</th>
+                    <th>Date Received</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="contact-table-body">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="../js/admin.js"></script>
+</body>
+</html>
