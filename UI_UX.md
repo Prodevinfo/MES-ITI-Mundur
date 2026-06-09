@@ -12,8 +12,8 @@ This document provides a summary of the refined UI/UX design architecture implem
 
 ### 1.2 News Ticker Alerts (Relocated)
 - **Top Bar Alignment**: Configured `.news-ticker` and `.news-marquee` with vertical flex centering (`height: 100%`, `align-items: center`) to align the scrolling texts and bell alerts.
-- **Relocated Above the Fold**: Moved the news ticker bar from below the hero section to immediately below the sticky header. This ensures the scrolling alerts are visible above the fold on all standard viewports and prevents clipping by taskbars.
-- **Relative Anchors**: Dynamic paths within subpages (`admissions.html`, `placements.html`, `blog.html`) were corrected to resolve relatively without parent folder prefixes.
+- **Relocated Above the Fold**: Moved the news ticker bar from below the hero section to immediately below the sticky header. This ensures the scrolling alerts are visible above the fold on all viewports and prevents clipping by taskbars.
+- **Relative Anchors**: Dynamic paths within all pages (`admissions.html`, `placements.html`, `blog.html`) resolve relatively.
 
 ### 1.3 Floating Notifications Drawer (Announcements)
 - **Visual Trigger Tab**: Pinned to the right margin with glassmorphism blur (`backdrop-filter: blur(8px)`) and a pulsing gold badge displaying the count of unread announcements.
@@ -22,7 +22,7 @@ This document provides a summary of the refined UI/UX design architecture implem
 
 ### 1.4 Placements Marquee Text Wrap Fix
 - **No-wrap Rules**: Introduced a light-themed `.recruiter-logo-light` class for light backgrounds.
-- **Grid Stability**: Applied this class to all 16 items on the Placements page (`pages/placements.html`), ensuring long names like *"Kerala State Electricity Board (KSEB)"* remain fully horizontal and scroll smoothly without wrapping vertically.
+- **Grid Stability**: Applied this class to all 16 items on the Placements page (`placements.html`), ensuring long names like *"Kerala State Electricity Board (KSEB)"* remain fully horizontal and scroll smoothly without wrapping vertically.
 
 ### 1.5 Mobile Top Utility Bar
 - **Structured Rows & Grid**: On viewports under `600px`, the top bar is split into a stacked column layout:
@@ -35,7 +35,7 @@ This document provides a summary of the refined UI/UX design architecture implem
 
 ## 2. GitHub Pages Deployment Guide
 
-The project's code architecture is designed to support **GitHub Pages subfolder routing** out of the box because it uses relative path references (`../` and direct relative paths) rather than absolute root links (`/`).
+The project's code architecture is designed to support **GitHub Pages subfolder routing** out of the box because it uses relative path references rather than absolute root links (`/`).
 
 ### 2.1 Step-by-Step Deployment
 
@@ -43,7 +43,7 @@ The project's code architecture is designed to support **GitHub Pages subfolder 
    Ensure all local changes are committed and pushed to the remote repository. Run the following command if you make future edits:
    ```bash
    git add .
-   git commit -m "Refine mobile top bar and add UI/UX documentation"
+   git commit -m "Flatten directory layout to project root"
    git push origin main
    ```
 
@@ -73,10 +73,18 @@ The project's code architecture is designed to support **GitHub Pages subfolder 
 
 ## 3. Directory Structure
 
-To keep the repository clean, subpages are separated into a dedicated subdirectory:
+All files reside directly in the root directory for maximum accessibility and simple hosting:
 ```text
 MES-ITI-Mundur/
 ├── index.html            # Main Landing Page (Root Entry Point)
+├── about.html            # About Us & statutory stat tables
+├── admissions.html       # Online Multi-Step Admissions Form
+├── blog.html             # Blog Feed, Search & Articles
+├── contact.html          # Contact & Embedded Google Maps Pin
+├── gallery.html          # Masonry Campus Life Gallery & Lightbox
+├── placements.html       # Placements rate dashboard & recruiter marquee
+├── sitemap.html          # Interactive Sitemap Directory
+├── trades.html           # Trades details & curriculum Syllabus
 ├── UI_UX.md              # UI/UX & Deployment Documentation (This file)
 ├── css/
 │   └── styles.css        # Main Stylesheet & HSL Design Tokens
@@ -84,14 +92,5 @@ MES-ITI-Mundur/
 │   └── app.js            # App Logics (Drawer, Slider, Modals, Forms)
 ├── assets/
 │   └── images/           # Compressed, Web-optimized Campus Images & Logos
-├── pages/
-│   ├── about.html        # About Us & statutory stat tables
-│   ├── admissions.html   # Online Multi-Step Admissions Form
-│   ├── blog.html         # Blog Feed, Search & Articles
-│   ├── contact.html      # Contact & Embedded Google Maps Pin
-│   ├── gallery.html      # Masonry Campus Life Gallery & Lightbox
-│   ├── placements.html   # Placements rate dashboard & recruiter marquee
-│   ├── sitemap.html      # Interactive Sitemap Directory
-│   └── trades.html       # Trades details & curriculum Syllabus
 └── docs/                 # Architectural Blueprints & Site Maps
 ```

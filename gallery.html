@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Gallery | Dr. P.K. Abdul Ghafoor Memorial M.E.S. Private ITI, Mundur</title>
+  <meta name="description" content="Browse the photo gallery of trade workshops, IT computer labs, sports events, and facilities at Dr. P.K. Abdul Ghafoor Memorial M.E.S. ITI Mundur.">
+  <link rel="stylesheet" href="css/styles.css?v=1.2">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.344.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-group">
+        <a href="tel:+914912832248"><i data-lucide="phone" style="width:14px;height:14px;"></i> +91 491 2832248</a>
+        <a href="mailto:mesitimundur@gmail.com"><i data-lucide="mail" style="width:14px;height:14px;"></i> mesitimundur@gmail.com</a>
+      </div>
+      <div class="top-bar-group">
+        <div class="dropdown">
+          <button class="dropdown-toggle" id="statutory-btn" aria-haspopup="true" aria-expanded="false">
+            <i data-lucide="shield-check" style="width:14px;height:14px;"></i> Statutory Committees
+            <i data-lucide="chevron-down" style="width:12px;height:12px;"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="statutory-btn">
+            <li><a href="#" class="modal-trigger" data-modal="anti-ragging">Anti-Ragging Committee</a></li>
+            <li><a href="#" class="modal-trigger" data-modal="grievance">Grievance Redressal Cell</a></li>
+            <li><a href="#" class="modal-trigger" data-modal="women-cell">Women Development / ICC</a></li>
+            <li><a href="#" class="modal-trigger" data-modal="minority-cell">SC/ST &amp; Minority Cell</a></li>
+          </ul>
+        </div>
+        <a href="https://www.ncvtmis.gov.in/" target="_blank" rel="noopener"><i data-lucide="external-link" style="width:14px;height:14px;"></i> NCVT MIS</a>
+        <a href="https://dgt.gov.in/" target="_blank" rel="noopener"><i data-lucide="external-link" style="width:14px;height:14px;"></i> DGT Portal</a>
+        <a href="sitemap.html"><i data-lucide="layout-grid" style="width:14px;height:14px;"></i> Sitemap</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header" id="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand">
+          <img src="assets/images/mes-logo.png" alt="MES Logo" class="brand-logo-img"><div class="brand-info"><span class="brand-subtitle">Dr. PK Abdul Ghafoor Memorial</span><h1 class="brand-title">MES Pvt ITI</h1><span class="brand-location">Mundur, Palakkad</span></div>
+          
+        </a>
+
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <div class="nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle">Academics <i data-lucide="chevron-down"></i></a>
+            <div class="nav-dropdown-content">
+              <a href="trades.html"><i data-lucide="wrench"></i> Trades &amp; Courses</a>
+              <a href="admissions.html"><i data-lucide="file-text"></i> Admissions</a>
+              <a href="placements.html"><i data-lucide="briefcase"></i> Placements</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle active">Campus Life <i data-lucide="chevron-down"></i></a>
+            <div class="nav-dropdown-content">
+              <a href="gallery.html" class="active"><i data-lucide="image"></i> Campus Gallery</a>
+              <a href="blog.html"><i data-lucide="newspaper"></i> Blog &amp; Events</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+          <a href="admissions.html" class="nav-link nav-cta">Apply Now</a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu" style="width:24px;height:24px;"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand">
+        <img src="assets/images/mes-logo.png" alt="MES" class="brand-logo-img" style="width:36px;height:36px;">
+        <span style="font-weight:700;color:var(--color-primary);">M.E.S. ITI</span>
+      </a>
+      <button class="mobile-drawer-close" aria-label="Close"><i data-lucide="x" style="width:22px;height:22px;"></i></button>
+    </div>
+    <div class="mobile-drawer-links">
+      <a href="index.html"><i data-lucide="home" style="width:18px;height:18px;"></i> Home</a>
+      <a href="about.html"><i data-lucide="info" style="width:18px;height:18px;"></i> About Us</a>
+      <a href="trades.html"><i data-lucide="wrench" style="width:18px;height:18px;"></i> Trades &amp; Courses</a>
+      <a href="admissions.html"><i data-lucide="file-text" style="width:18px;height:18px;"></i> Admissions</a>
+      <a href="placements.html"><i data-lucide="briefcase" style="width:18px;height:18px;"></i> Placements</a>
+      <a href="gallery.html" class="active"><i data-lucide="image" style="width:18px;height:18px;"></i> Campus Gallery</a>
+      <a href="blog.html"><i data-lucide="newspaper" style="width:18px;height:18px;"></i> Blog &amp; Events</a>
+      <a href="contact.html"><i data-lucide="phone" style="width:18px;height:18px;"></i> Contact Us</a>
+      <a href="admissions.html" class="mobile-drawer-cta">Apply Now</a>
+    </div>
+  </aside>
+
+  <!-- News Ticker -->
+  <div class="news-ticker-bar">
+    <div class="news-label"><i data-lucide="bell" style="width:14px;height:14px;"></i>&nbsp; Alerts</div>
+    <div class="news-ticker">
+      <div class="news-marquee">
+        <a href="admissions.html"><i data-lucide="megaphone" style="width:14px;height:14px;"></i> Admission open for 2026-2027 batch! Submit your enquiry online today.</a>
+        <a href="placements.html"><i data-lucide="trophy" style="width:14px;height:14px;"></i> 92% placement achievement for Electrician trade graduates this season.</a>
+        <a href="blog.html"><i data-lucide="calendar" style="width:14px;height:14px;"></i> Annual Sports Meet 2026 concluded with record participation across all trades.</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container animate-on-scroll">
+      <h2>Campus Gallery</h2>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+        <span>Campus Life</span>
+        <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+        <span>Campus Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Campus Overview -->
+    <section class="section" style="background: var(--color-surface);">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-label">Our Gallery</div>
+          <h2>Explore Our Campus &amp; Training Facilities</h2>
+          <p class="section-desc">Take a visual tour of Dr. P.K. Abdul Ghafoor Memorial M.E.S. ITI Mundur. We feature state-of-the-art trade workshops, high-tech IT computer labs, resources libraries, and vibrant student activities conforming to DGT standards.</p>
+        </div>
+        
+        <!-- Interactive Gallery Filters -->
+        <div class="gallery-filters animate-on-scroll" style="display:flex; justify-content:center; gap:0.75rem; margin-bottom: 3rem; flex-wrap:wrap;">
+          <button class="filter-btn active" data-filter="all">All Photos</button>
+          <button class="filter-btn" data-filter="workshops">Workshops &amp; Labs</button>
+          <button class="filter-btn" data-filter="infrastructure">Campus Infrastructure</button>
+          <button class="filter-btn" data-filter="events">Events &amp; Student Life</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid animate-on-scroll">
+          <!-- Item 1 -->
+          <div class="gallery-item animate-on-scroll" data-category="workshops" data-index="0" data-src="assets/images/hero/hero-electrician.png" data-title="Electrician Workshop" data-desc="Spacious practical workshop equipped with three-phase motor-generator sets, alternating boards, slip-ring induction motors, and safety gear.">
+            <img src="assets/images/hero/hero-electrician.png" alt="Electrician Workshop" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Electrician Workshop</h4>
+              <span>Workshops &amp; Labs</span>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="gallery-item animate-on-scroll" data-category="workshops" data-index="1" data-src="assets/images/hero/hero-civil.png" data-title="Civil Drafting Studio" data-desc="Modern studio with specialized drafting desks, surveying equipment including Auto-levels, Total Stations, and design software terminals.">
+            <img src="assets/images/hero/hero-civil.png" alt="Civil Drafting Studio" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Civil Drafting Studio</h4>
+              <span>Workshops &amp; Labs</span>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="gallery-item animate-on-scroll" data-category="workshops" data-index="2" data-src="assets/images/workshop-electronics.png" data-title="Electronics Mechanic Lab" data-desc="Advanced lab setups featuring digital oscilloscopes, function generators, microcontrollers, breadboard trainer kits, and PCB etching modules.">
+            <img src="assets/images/workshop-electronics.png" alt="Electronics Lab" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Electronics Lab</h4>
+              <span>Workshops &amp; Labs</span>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="gallery-item animate-on-scroll" data-category="workshops" data-index="3" data-src="assets/images/gallery/plumber-workshop.png" data-title="Plumbing Training Workshop" data-desc="Hands-on facility featuring workbench setups, piping systems layout boards, pipe benders, and high-quality utility tools for plumbing trainees.">
+            <img src="assets/images/gallery/plumber-workshop.png" alt="Plumbing Workshop" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Plumbing Workshop</h4>
+              <span>Workshops &amp; Labs</span>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="gallery-item animate-on-scroll" data-category="workshops" data-index="4" data-src="assets/images/gallery/computer-lab.png" data-title="Computer IT Lab" data-desc="Fully air-conditioned computer center equipped with high-speed internet terminals, CAD systems, and vocational training software.">
+            <img src="assets/images/gallery/computer-lab.png" alt="Computer IT Lab" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Computer IT Lab</h4>
+              <span>Workshops &amp; Labs</span>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="gallery-item animate-on-scroll" data-category="infrastructure" data-index="5" data-src="assets/images/campus-building-actual.jpg" data-title="Main Academic Building" data-desc="The actual three-story building block of Dr. P.K. Abdul Ghafoor Memorial M.E.S. Private ITI at Mundur, housing classrooms, offices, and trade laboratories.">
+            <img src="assets/images/campus-building-actual.jpg" alt="Academic Building" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Academic Building</h4>
+              <span>Campus Infrastructure</span>
+            </div>
+          </div>
+          <!-- Item 7 -->
+          <div class="gallery-item animate-on-scroll" data-category="infrastructure" data-index="6" data-src="assets/images/gallery/library.png" data-title="Technical Reference Library" data-desc="Resource-rich learning space featuring textbooks, trade manuals, directories, safety journals, and subscription learning portals.">
+            <img src="assets/images/gallery/library.png" alt="Technical Library" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Technical Library</h4>
+              <span>Campus Infrastructure</span>
+            </div>
+          </div>
+          <!-- Item 8 -->
+          <div class="gallery-item animate-on-scroll" data-category="infrastructure" data-index="7" data-src="assets/images/hero/hero-electrical.png" data-title="Wireman Line Yard" data-desc="Outdoor specialized installation site with transmission poles and overhead cables for wireman trade overhead wiring practices.">
+            <img src="assets/images/hero/hero-electrical.png" alt="Wireman Line Yard" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Wireman Line Yard</h4>
+              <span>Campus Infrastructure</span>
+            </div>
+          </div>
+          <!-- Item 9 -->
+          <div class="gallery-item animate-on-scroll" data-category="events" data-index="8" data-src="assets/images/gallery/sports.png" data-title="Annual Sports Meet" data-desc="Student athletic meet on the campus sports ground. Trainees compete in track events, cricket, volleyball, and team games.">
+            <img src="assets/images/gallery/sports.png" alt="Annual Sports Meet" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Annual Sports Meet</h4>
+              <span>Events &amp; Student Life</span>
+            </div>
+          </div>
+          <!-- Item 10 -->
+          <div class="gallery-item animate-on-scroll" data-category="infrastructure" data-index="9" data-src="assets/images/campus-gate.png" data-title="Campus Entrance Archway" data-desc="The main entrance archway and gate of Dr. P.K. Abdul Ghafoor Memorial M.E.S. Private ITI, Mundur.">
+            <img src="assets/images/campus-gate.png" alt="Campus Entrance Archway" loading="lazy">
+            <div class="gallery-item-overlay">
+              <div class="gallery-icon-circle"><i data-lucide="maximize-2"></i></div>
+              <h4>Entrance Gate Arch</h4>
+              <span>Campus Infrastructure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facility Features Cards -->
+    <section class="section" style="background: var(--color-bg); margin-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-label">Infrastructure highlights</div>
+          <h2>Key Facilities Highlight</h2>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card animate-on-scroll delay-1">
+            <div class="feature-icon"><i data-lucide="zap"></i></div>
+            <h3>Electrical Machinery Lab</h3>
+            <p>Spacious, fully ventilated lab housing three-phase alternators, slip-ring induction motors, DC shunt motors, transformers, and earthing setups.</p>
+          </div>
+          <div class="feature-card animate-on-scroll delay-2">
+            <div class="feature-icon"><i data-lucide="pencil"></i></div>
+            <h3>Civil Drafting Studio</h3>
+            <p>Fitted with ergonomic drawing tables, surveying instruments (Total Stations, Auto-levels, prismatic compasses), and high-spec CAD computers.</p>
+          </div>
+          <div class="feature-card animate-on-scroll delay-3">
+            <div class="feature-icon"><i data-lucide="cpu"></i></div>
+            <h3>Electronic Diagnostics Lab</h3>
+            <p>Modern ESD-safe workbench stations containing digital CROs, function generators, microcontrollers, and complete PCB etching units.</p>
+          </div>
+          <div class="feature-card animate-on-scroll delay-4">
+            <div class="feature-icon"><i data-lucide="book-open"></i></div>
+            <h3>Reference Library</h3>
+            <p>Houses over 2,000 reference manuals, textbooks, industrial safety guides, trade directories, and subscription scientific journals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>M.E.S. ITI Mundur</h3>
+          <p>A trusted NCVT-accredited institution governed by the Muslim Educational Society (MES). Dedicated to technical training, job placements, and national skills standards since establishment.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook"><i data-lucide="facebook" style="width:16px;height:16px;"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter" style="width:16px;height:16px;"></i></a>
+            <a href="#" class="social-icon" aria-label="Youtube"><i data-lucide="youtube" style="width:16px;height:16px;"></i></a>
+            <a href="#" class="social-icon" aria-label="Linkedin"><i data-lucide="linkedin" style="width:16px;height:16px;"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Popular Trades</h3>
+          <div class="footer-links">
+            <a href="trades.html#electrician">Electrician Course</a>
+            <a href="trades.html#civil">Draughtsman Civil</a>
+            <a href="trades.html#electronic">Electronic Mechanic</a>
+            <a href="trades.html#wireman">Wireman Program</a>
+            <a href="trades.html#plumber">Plumber (1 Year)</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="#" class="modal-trigger" data-modal="disclosures">Mandatory Disclosures</a>
+            <a href="#" class="modal-trigger" data-modal="grievance">Grievance Submission</a>
+            <a href="admissions.html">Admissions Portal</a>
+            <a href="about.html">Affiliation Status</a>
+            <a href="sitemap.html">Interactive Sitemap</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <div class="footer-contact">
+            <p><i data-lucide="map-pin" style="width:16px;height:16px;"></i> Mundur, Palakkad, Kerala - 678592</p>
+            <p><i data-lucide="phone" style="width:16px;height:16px;"></i> +91 491 2832248</p>
+            <p><i data-lucide="mail" style="width:16px;height:16px;"></i> mesitimundur@gmail.com</p>
+            <p><i data-lucide="clock" style="width:16px;height:16px;"></i> Mon - Sat: 9:00 AM - 4:30 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dr. P.K. Abdul Ghafoor Memorial M.E.S. Private ITI. All Rights Reserved. NCVT Code: PR32000213.</p>
+        <p>Designed by <a href="#" style="color:var(--color-accent);font-weight:600;">Team ProDevInfo</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal-overlay" id="submission-success-overlay">
+    <div class="modal-card">
+      <div class="modal-icon"><i data-lucide="check" style="width:28px;height:28px;"></i></div>
+      <h3 style="color:var(--color-primary);margin-bottom:0.75rem;">Submission Successful!</h3>
+      <p id="success-card-text" style="color:var(--color-text);margin-bottom:1.5rem;">Thank you for submitting your enquiry. Our academic counselor will contact you shortly.</p>
+      <button class="btn btn-secondary" id="success-close-btn" style="width:100%;">Dismiss</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="statutory-modal-overlay">
+    <div class="modal-card modal-detail">
+      <div class="modal-detail-header">
+        <h3 id="modal-title">Committee Details</h3>
+        <button class="modal-close-btn" id="modal-close-btn"><i data-lucide="x" style="width:20px;height:20px;"></i></button>
+      </div>
+      <div id="modal-body-content" style="font-size:0.95rem;color:var(--color-text);line-height:1.7;"></div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-label="Image Lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox"><i data-lucide="x"></i></button>
+    <button class="lightbox-arrow lightbox-arrow-prev" id="lightbox-prev" aria-label="Previous Image"><i data-lucide="chevron-left"></i></button>
+    <button class="lightbox-arrow lightbox-arrow-next" id="lightbox-next" aria-label="Next Image"><i data-lucide="chevron-right"></i></button>
+    <div class="lightbox-content-wrapper">
+      <div class="lightbox-image-container">
+        <img src="" alt="" id="lightbox-img">
+        <div class="lightbox-loader"></div>
+      </div>
+      <div class="lightbox-caption">
+        <div class="lightbox-caption-text">
+          <h3 id="lightbox-caption-title">Image Title</h3>
+          <p id="lightbox-caption-desc">Image Description</p>
+        </div>
+        <div class="lightbox-counter" id="lightbox-counter">1 of 10</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up" style="width:20px;height:20px;"></i>
+  </button>
+
+  <!-- Floating Notifications Widget -->
+  <button class="notifications-tab" id="notifications-tab" aria-label="Toggle Announcements">
+    <i data-lucide="bell" class="notifications-bell-icon"></i>
+    <span>Notifications</span>
+    <span class="notifications-badge">2</span>
+  </button>
+
+  <!-- Notifications Drawer -->
+  <div class="notifications-overlay" id="notifications-overlay"></div>
+  <aside class="notifications-drawer" id="notifications-drawer" aria-label="Announcements Panel">
+    <div class="notifications-drawer-header">
+      <div class="notifications-drawer-title">
+        <i data-lucide="bell-ring" class="text-accent"></i>
+        <h3>Latest Announcements</h3>
+      </div>
+      <button class="notifications-drawer-close" id="notifications-drawer-close" aria-label="Close Announcements"><i data-lucide="x"></i></button>
+    </div>
+    <div class="notifications-drawer-body">
+      <!-- Announcement 1 -->
+      <div class="announcement-item unread">
+        <div class="announcement-meta">
+          <span class="announcement-tag tag-admission">Admission</span>
+          <span class="announcement-date">June 2026</span>
+        </div>
+        <h4>Admissions Open for 2026-27</h4>
+        <p>Enrolment has commenced for Electrician, Draughtsman Civil, Wireman, and Plumber trades. Apply online today.</p>
+        <a href="admissions.html" class="announcement-link">Online Admission Portal <i data-lucide="arrow-right"></i></a>
+      </div>
+      
+      <!-- Announcement 2 -->
+      <div class="announcement-item unread">
+        <div class="announcement-meta">
+          <span class="announcement-tag tag-exam">Exams</span>
+          <span class="announcement-date">June 2026</span>
+        </div>
+        <h4>AITT Practical Exam Schedule</h4>
+        <p>The practical examination timetable for all first and second-year trainees has been posted on the sitemap board.</p>
+        <a href="blog.html" class="announcement-link">Download Schedule <i data-lucide="arrow-right"></i></a>
+      </div>
+
+      <!-- Announcement 3 -->
+      <div class="announcement-item">
+        <div class="announcement-meta">
+          <span class="announcement-tag tag-placement">Placement</span>
+          <span class="announcement-date">May 2026</span>
+        </div>
+        <h4>Upcoming KSEB &amp; L&amp;T Campus Recruitment</h4>
+        <p>A joint campus placement drive is scheduled for final year Electrician and Wireman trainees on June 22.</p>
+        <a href="placements.html" class="announcement-link">Register for Placements <i data-lucide="arrow-right"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/app.js?v=1.2"></script>
+</body>
+</html>
+
+
+
+
+
+
+
