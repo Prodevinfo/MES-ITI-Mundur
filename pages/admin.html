@@ -68,6 +68,10 @@
           <i data-lucide="megaphone"></i>
           <span>Announcements</span>
         </div>
+        <div class="admin-menu-item" data-tab="gallery">
+          <i data-lucide="image"></i>
+          <span>Gallery Manager</span>
+        </div>
         <div class="admin-menu-item" data-tab="contact">
           <i data-lucide="mail"></i>
           <span>Contact Messages</span>
@@ -144,6 +148,15 @@
               </div>
               <div class="admin-stat-icon icon-purple">
                 <i data-lucide="mail"></i>
+              </div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-info">
+                <span class="admin-stat-label">Gallery Items</span>
+                <span class="admin-stat-value" id="stat-gallery">10</span>
+              </div>
+              <div class="admin-stat-icon" style="background: rgba(232, 67, 147, 0.08); color: #e84393;">
+                <i data-lucide="image"></i>
               </div>
             </div>
           </div>
@@ -343,7 +356,64 @@
           </div>
         </section>
 
-        <!-- 5. CONTACT MESSAGES TAB PANE -->
+        <!-- 5. GALLERY TAB PANE -->
+        <section class="admin-tab-pane" id="pane-gallery">
+          <div class="admin-dashboard-grid" style="grid-template-columns: 1fr 1.8fr;">
+            <!-- Create Form -->
+            <div class="admin-card">
+              <div class="admin-card-header">
+                <h3>Add Gallery Photo</h3>
+              </div>
+              <div class="admin-card-body">
+                <form id="admin-gallery-form" novalidate>
+                  <div class="admin-form-group">
+                    <label class="admin-form-label" for="gallery-title">Image Title *</label>
+                    <input type="text" id="gallery-title" class="admin-form-control" required placeholder="e.g. Electrical Training Bench">
+                  </div>
+                  <div class="admin-form-group">
+                    <label class="admin-form-label" for="gallery-category">Category *</label>
+                    <select id="gallery-category" class="admin-form-control" required>
+                      <option value="Workshops & Labs">Workshops & Labs</option>
+                      <option value="Campus Infrastructure">Campus Infrastructure</option>
+                      <option value="Events & Student Life">Events & Student Life</option>
+                    </select>
+                  </div>
+                  <div class="admin-form-group">
+                    <label class="admin-form-label" for="gallery-desc">Brief Description *</label>
+                    <input type="text" id="gallery-desc" class="admin-form-control" required placeholder="e.g. Trainees assembling circuit boards">
+                  </div>
+                  <div class="admin-form-group">
+                    <label class="admin-form-label" for="gallery-img-url">Mock Image *</label>
+                    <select id="gallery-img-url" class="admin-form-control" required>
+                      <option value="../assets/images/gallery/library.png">Technical Library</option>
+                      <option value="../assets/images/gallery/computer-lab.png">IT Lab</option>
+                      <option value="../assets/images/gallery/sports.png">Sports Field</option>
+                      <option value="../assets/images/gallery/plumber-workshop.png">Plumbing Workshop</option>
+                      <option value="../assets/images/campus-building-actual.jpg">Academic Building</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:0.75rem 0;">
+                    Add Photo <i data-lucide="plus" style="width:16px;height:16px;margin-left:0.5rem;"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- List Active Items -->
+            <div class="admin-card">
+              <div class="admin-card-header">
+                <h3>Active Gallery Items</h3>
+              </div>
+              <div class="admin-card-body">
+                <div class="admin-gallery-grid" id="admin-gallery-items-grid">
+                  <!-- Populated dynamically -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. CONTACT MESSAGES TAB PANE -->
         <section class="admin-tab-pane" id="pane-contact">
           <div class="admin-toolbar">
             <div class="admin-search-wrapper">

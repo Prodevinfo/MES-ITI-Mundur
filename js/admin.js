@@ -33,6 +33,18 @@ document.addEventListener('DOMContentLoaded', function() {
     { id: 4, name: "Father of trainee", email: "abdul62@gmail.com", subject: "Hostel facility", body: "Do you have any tied-up hostel facility or rooms nearby for outer-district students?", date: "2026-06-02" }
   ];
 
+  let galleryItems = [
+    { id: 1, title: "Electrical Workshop", category: "Workshops & Labs", img: "../assets/images/hero/hero-electrical.png", desc: "Trainees working in electrical machine lab." },
+    { id: 2, title: "Civil Drafting Studio", category: "Workshops & Labs", img: "../assets/images/hero/hero-civil.png", desc: "Drawing boards and planning workspace." },
+    { id: 3, title: "Electronics Lab", category: "Workshops & Labs", img: "../assets/images/workshop-electronics.png", desc: "Digital circuit design testing station." },
+    { id: 4, title: "Plumbing Workshop", category: "Workshops & Labs", img: "../assets/images/gallery/plumber-workshop.png", desc: "Piping connections installation lab." },
+    { id: 5, title: "Computer IT Lab", category: "Workshops & Labs", img: "../assets/images/gallery/computer-lab.png", desc: "Equipped desktop systems for CAD & IT." },
+    { id: 6, title: "Academic Building", category: "Campus Infrastructure", img: "../assets/images/campus-building-actual.jpg", desc: "Real photo of main building block." },
+    { id: 7, title: "Technical Library", category: "Campus Infrastructure", img: "../assets/images/gallery/library.png", desc: "Reference text reference desk area." },
+    { id: 8, title: "Sports Meet 2026", category: "Events & Student Life", img: "../assets/images/gallery/sports.png", desc: "Volleyball tournament match." },
+    { id: 9, title: "Entrance Gate Arch", category: "Campus Infrastructure", img: "../assets/images/campus-gate.png", desc: "MES main campus entrance gate arch." }
+  ];
+
   // ──────────────────────────────────────────────
   // 1. Simulated Login & Logout
   // ──────────────────────────────────────────────
@@ -142,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
     renderAdmissions();
     renderAlumni();
     renderAnnouncements();
+    renderGallery();
     renderContactMessages();
   }
 
@@ -150,6 +163,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('stat-alumni').textContent = alumni.filter(a => a.status === 'pending').length;
     document.getElementById('stat-notices').textContent = notices.length;
     document.getElementById('stat-mail').textContent = messages.length;
+    const statGallery = document.getElementById('stat-gallery');
+    if (statGallery) statGallery.textContent = galleryItems.length;
   }
 
   // OVERVIEW TAB: Recent Enquiries List
@@ -500,6 +515,87 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 400);
       }
     }
+  }
+
+  // GALLERY TAB
+  function renderGallery() {
+    const grid = document.getElementById('admin-gallery-items-grid');
+    if (!grid) return;
+
+    grid.innerHTML = '';
+
+    if (galleryItems.length === 0) {
+      grid.innerHTML = `<p class="text-center" style="grid-column: 1/-1; padding: 2rem; color: var(--color-text-light);">No photos in the gallery.</p>`;
+      return;
+    }
+
+    galleryItems.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'admin-gallery-item';
+      div.id = `admin-gallery-item-${item.id}`;
+      div.innerHTML = `
+        <img src="${item.img}" alt="${item.title}" class="admin-gallery-img" onerror="this.src='../assets/images/hero/hero-electrical.png'">
+        <div class="admin-gallery-info">
+          <span class="admin-gallery-category">${item.category}</span>
+          <h4 class="admin-gallery-title">${item.title}</h4>
+        </div>
+        <div class="admin-gallery-actions">
+          <button class="admin-btn-icon btn-delete" title="Delete Photo" data-id="${item.id}"><i data-lucide="trash-2"></i></button>
+        </div>
+      `;
+      grid.appendChild(div);
+
+      const deleteBtn = div.querySelector('.btn-delete');
+      deleteBtn.addEventListener('click', () => deleteGalleryItem(item.id));
+    });
+
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  function deleteGalleryItem(id) {
+    if (confirm('Are you sure you want to delete this photo from the gallery?')) {
+      const card = document.getElementById(`admin-gallery-item-${id}`);
+      if (card) {
+        card.style.transition = 'all 0.4s ease';
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.8)';
+        setTimeout(() => {
+          galleryItems = galleryItems.filter(g => g.id !== id);
+          renderGallery();
+          updateStatsCounters();
+        }, 400);
+      }
+    }
+  }
+
+  const galleryForm = document.getElementById('admin-gallery-form');
+  if (galleryForm) {
+    galleryForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const title = document.getElementById('gallery-title').value.trim();
+      const category = document.getElementById('gallery-category').value;
+      const desc = document.getElementById('gallery-desc').value.trim();
+      const img = document.getElementById('gallery-img-url').value;
+
+      if (!title || !desc) {
+        alert('Please fill out all required fields.');
+        return;
+      }
+
+      const newId = galleryItems.length > 0 ? Math.max(...galleryItems.map(g => g.id)) + 1 : 1;
+      galleryItems.push({
+        id: newId,
+        title: title,
+        category: category,
+        img: img,
+        desc: desc
+      });
+
+      alert('Photo successfully added to gallery mockup!');
+      this.reset();
+      renderGallery();
+      updateStatsCounters();
+    });
   }
 
   // Auto sign in when developing/testing (Uncomment if needed, but manual login is standard for demo)
