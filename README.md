@@ -33,21 +33,7 @@ This document provides a summary of the refined UI/UX design architecture implem
 
 ---
 
-## 2. GitHub Pages Deployment Guide
-
-The project's code architecture is designed to support **GitHub Pages subfolder routing** out of the box because it uses relative path references (`../` and direct relative paths) rather than absolute root links (`/`).
-
-1. **Push Changes to GitHub**:
-   Ensure all local changes are committed and pushed to the remote repository. Run the following command if you make future edits:
-   ```bash
-   git add .
-   git commit -m "Refine mobile top bar and add UI/UX documentation"
-   git push origin main
-   ```
-
----
-
-## 3. Directory Structure
+## 2. Directory Structure
 
 To keep the repository clean, subpages are separated into a dedicated subdirectory:
 ```text
