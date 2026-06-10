@@ -1,6 +1,6 @@
 # M.E.S. Private ITI Mundur — UI/UX & GitHub Pages Deployment Guide
 
-This document provides a summary of the refined UI/UX design architecture implemented for the M.E.S. Private ITI Mundur website and details how to deploy the repository to **GitHub Pages**.
+This document provides a summary of the refined UI/UX design architecture implemented for the M.E.S. Private ITI Mundur website and details.
 
 ---
 
