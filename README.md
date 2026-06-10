@@ -37,8 +37,6 @@ This document provides a summary of the refined UI/UX design architecture implem
 
 The project's code architecture is designed to support **GitHub Pages subfolder routing** out of the box because it uses relative path references (`../` and direct relative paths) rather than absolute root links (`/`).
 
-### 2.1 Step-by-Step Deployment
-
 1. **Push Changes to GitHub**:
    Ensure all local changes are committed and pushed to the remote repository. Run the following command if you make future edits:
    ```bash
@@ -46,28 +44,6 @@ The project's code architecture is designed to support **GitHub Pages subfolder 
    git commit -m "Refine mobile top bar and add UI/UX documentation"
    git push origin main
    ```
-
-2. **Access Repository Settings**:
-   - Go to your remote repository: [https://github.com/Prodevinfo/MES-ITI-Mundur](https://github.com/Prodevinfo/MES-ITI-Mundur).
-   - In the top navigation bar, click on **Settings** (represented by the cog icon).
-
-3. **Navigate to Pages**:
-   - In the left sidebar, locate the **Code and automation** section.
-   - Click on **Pages**.
-
-4. **Configure Deployment Source**:
-   - Under the **Build and deployment** section, look for **Source**.
-   - Ensure the dropdown is set to **Deploy from a branch**.
-
-5. **Select Branch & Folder**:
-   - Under **Branch**, click the first dropdown and select **main** (or your primary branch name).
-   - In the folder dropdown, select **/(root)**.
-   - Click the **Save** button.
-
-6. **Deploy**:
-   - GitHub Actions will automatically start building and deploying your static site. This process typically takes 1–3 minutes.
-   - Refresh the page, and you will see a banner at the top of the Pages section showing your live URL:
-     `Your site is live at https://prodevinfo.github.io/MES-ITI-Mundur/`
 
 ---
 
