@@ -1,0 +1,475 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1720" viewBox="0 0 1500 1720" style="background-color: #1e1e1e; font-family: 'Inter', system-ui, sans-serif;">
+  <!-- Figma Style Workspace Background Grid -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2a2a2a" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="hero-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A2463" />
+      <stop offset="100%" stop-color="#1B3A7B" />
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A843" />
+      <stop offset="100%" stop-color="#E8C36A" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Figma Canvas Labels -->
+  <text x="50" y="35" fill="#888" font-size="14" font-weight="600">WEBSITE PAGES ARTBOARDS (ACTUAL CONTENT &amp; STYLES)</text>
+
+  <!-- ==================== ROW 1 ==================== -->
+
+  <!-- FRAME 1: HOMEPAGE (index.html) -->
+  <g id="Frame - Homepage" transform="translate(50, 60)">
+    <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
+    <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Homepage (420 x 780)</text>
+
+    <!-- Top Utility Bar -->
+    <g id="Top Bar" transform="translate(0, 0)">
+      <rect width="420" height="28" fill="#071A4A" rx="12" clip-path="inset(0 0 760 0)" />
+      <text x="15" y="17" fill="#ffffff" font-size="8.5">+91 491 2832248</text>
+      <text x="120" y="17" fill="#ffffff" font-size="8.5">mesitimundur@gmail.com</text>
+      <text x="360" y="17" fill="#D4A843" font-size="8.5" font-weight="700" text-anchor="end">Statutory Comm.</text>
+      <path d="M 370 14 L 374 18 L 378 14" fill="none" stroke="#D4A843" stroke-width="1.2" />
+    </g>
+
+    <!-- Header / Navbar -->
+    <g id="Navbar" transform="translate(0, 28)">
+      <rect width="420" height="52" fill="#0A2463" />
+      <!-- Logo crest -->
+      <circle cx="30" cy="26" r="14" fill="#ffffff" fill-opacity="0.08" />
+      <path d="M 23 21 L 37 21 L 39 31 L 30 35 L 21 31 Z" fill="none" stroke="#D4A843" stroke-width="1.2" />
+      
+      <!-- Brand title info -->
+      <text x="52" y="20" fill="#E8C36A" font-size="8.5" font-weight="500">Dr. PK Abdul Ghafoor Memorial</text>
+      <text x="52" y="33" fill="#ffffff" font-size="13" font-weight="800">MES Pvt ITI</text>
+      <text x="52" y="44" fill="#a0aec0" font-size="8">Mundur, Palakkad</text>
+      
+      <!-- Menu burger -->
+      <path d="M 375 21 L 395 21 M 375 26 L 395 26 M 375 31 L 395 31" stroke="#ffffff" stroke-width="1.8" />
+    </g>
+
+    <!-- News Ticker -->
+    <g id="News Ticker" transform="translate(0, 80)">
+      <rect width="420" height="24" fill="#D4A843" fill-opacity="0.1" />
+      <rect width="52" height="24" fill="#D4A843" />
+      <text x="26" y="15" fill="#0A2463" font-size="9" font-weight="700" text-anchor="middle">Alerts</text>
+      <text x="62" y="15" fill="#0A2463" font-size="8.5" font-weight="600">Admission open for 2026-2027 batch! Apply online.</text>
+    </g>
+
+    <!-- Hero Section -->
+    <g id="Hero" transform="translate(0, 104)">
+      <rect width="420" height="200" fill="url(#hero-grad)" />
+      <text x="25" y="45" fill="#D4A843" font-size="9.5" font-weight="700" letter-spacing="0.8">NCVT ACCREDITED INSTITUTION</text>
+      <text x="25" y="75" fill="#ffffff" font-size="18" font-weight="800" font-family="'Plus Jakarta Sans', sans-serif">Shaping Technical</text>
+      <text x="25" y="100" fill="#ffffff" font-size="18" font-weight="800" font-family="'Plus Jakarta Sans', sans-serif">Careers With Excellence</text>
+      <text x="25" y="125" fill="#e2e8f0" font-size="9.5" width="370">Dr. P.K. Abdul Ghafoor Memorial M.E.S. ITI offers high-demand NCVT courses with cutting-edge workshops.</text>
+      
+      <!-- CTA Buttons -->
+      <rect x="25" y="150" width="135" height="32" rx="4" fill="#D4A843" />
+      <text x="92" y="169" fill="#0A2463" font-size="10" font-weight="700" text-anchor="middle">Enquire for Admission</text>
+      
+      <rect x="170" y="150" width="115" height="32" rx="4" fill="none" stroke="#ffffff" stroke-width="1.5" />
+      <text x="227" y="169" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">Explore Our Trades</text>
+    </g>
+
+    <!-- Why Choose Us -->
+    <g id="Why Choose Us" transform="translate(0, 314)">
+      <text x="25" y="25" fill="#0A2463" font-size="14" font-weight="700">Why Choose Us</text>
+      
+      <!-- Feature Card 1 -->
+      <g transform="translate(25, 40)">
+        <rect width="175" height="65" rx="6" fill="#ffffff" stroke="#E2E8F0" stroke-width="1" />
+        <circle cx="25" cy="32" r="14" fill="#0a2463" fill-opacity="0.06" />
+        <path d="M 20 32 L 24 36 L 30 28" fill="none" stroke="#0a2463" stroke-width="2" />
+        <text x="48" y="27" fill="#0A2463" font-size="11" font-weight="700">NCVT Certified</text>
+        <text x="48" y="42" fill="#718096" font-size="8.5">Affiliated under DGT Govt.</text>
+      </g>
+      
+      <!-- Feature Card 2 -->
+      <g transform="translate(220, 40)">
+        <rect width="175" height="65" rx="6" fill="#ffffff" stroke="#E2E8F0" stroke-width="1" />
+        <circle cx="25" cy="32" r="14" fill="#0a2463" fill-opacity="0.06" />
+        <text x="48" y="27" fill="#0A2463" font-size="11" font-weight="700">Placement Support</text>
+        <text x="48" y="42" fill="#718096" font-size="8.5">Strong recruiter network.</text>
+      </g>
+    </g>
+
+    <!-- Principal Section -->
+    <g id="Principal Welcome" transform="translate(25, 440)">
+      <rect width="370" height="145" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+      <text x="145" y="30" fill="#0A2463" font-size="13" font-weight="700">Welcome to M.E.S. ITI</text>
+      <text x="145" y="55" fill="#4a5568" font-size="9" font-style="italic" width="200">"Our mission is to empower youth with advanced technical skills, building a foundation of practical knowledge..."</text>
+      <text x="145" y="110" fill="#0a2463" font-size="10" font-weight="700">Prof. K. A. Latheef</text>
+      <text x="145" y="123" fill="#718096" font-size="8.5">Principal, M.E.S. ITI Mundur</text>
+      <!-- Avatar placeholder -->
+      <rect x="15" y="20" width="115" height="105" rx="4" fill="#edf2f7" />
+      <circle cx="72" cy="62" r="22" fill="#cbd5e0" />
+      <path d="M 52 98 C 52 80 92 80 92 98 Z" fill="#4a5568" />
+    </g>
+
+    <!-- Footer -->
+    <g id="Footer" transform="translate(0, 680)">
+      <rect width="420" height="100" fill="#071A4A" />
+      <text x="25" y="35" fill="#ffffff" font-size="10.5" font-weight="700">M.E.S. Private ITI Mundur</text>
+      <text x="25" y="52" fill="#a0aec0" font-size="8.5">Mundur, Palakkad, Kerala - 678592</text>
+      <text x="25" y="70" fill="#D4A843" font-size="9" font-weight="600">Administration Portal login →</text>
+    </g>
+  </g>
+
+  <!-- FRAME 2: TRADES & COURSES (trades.html) -->
+  <g id="Frame - Trades Catalog" transform="translate(510, 60)">
+    <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
+    <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Trades &amp; Courses (420 x 780)</text>
+
+    <!-- Navbar -->
+    <g id="Navbar" transform="translate(0, 0)">
+      <rect width="420" height="60" fill="#0A2463" rx="12" clip-path="inset(0 0 720 0)" />
+      <text x="25" y="35" fill="#ffffff" font-size="14" font-weight="700">Trades &amp; Courses</text>
+    </g>
+
+    <g id="Page Title" transform="translate(25, 80)">
+      <text x="0" y="25" fill="#0A2463" font-size="18" font-weight="800">Our Training Trades</text>
+      <text x="0" y="42" fill="#718096" font-size="10.5">Explore NCVT affiliated vocational courses.</text>
+    </g>
+
+    <!-- Trade Card 1: Electrician -->
+    <g id="Trade Card - Electrician" transform="translate(25, 145)">
+      <rect width="370" height="155" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+      <rect width="370" height="6" fill="#0A2463" rx="3" clip-path="inset(0 0 150 0)" />
+      <text x="20" y="26" fill="#0A2463" font-size="14" font-weight="700">Electrician</text>
+      <text x="20" y="44" fill="#2E86DE" font-size="9.5" font-weight="700">Duration: 2 Years | Affiliation: NCVT</text>
+      <text x="20" y="68" fill="#4a5568" font-size="10.5" width="330">Excellent wiring workshops, winding machines, test panels, and safety apparatus modules.</text>
+      
+      <!-- Badges -->
+      <rect x="20" y="115" width="75" height="22" rx="4" fill="#f0fff4" />
+      <text x="57" y="129" fill="#27AE60" font-size="9" font-weight="700" text-anchor="middle">Seats: 21</text>
+      
+      <rect x="105" y="115" width="75" height="22" rx="4" fill="#ebf8ff" />
+      <text x="142" y="129" fill="#2b6cb0" font-size="9" font-weight="700" text-anchor="middle">Metric (SSLC)</text>
+    </g>
+
+    <!-- Trade Card 2: Draughtsman Civil -->
+    <g id="Trade Card - Civil" transform="translate(25, 315)">
+      <rect width="370" height="155" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+      <rect width="370" height="6" fill="#D4A843" rx="3" clip-path="inset(0 0 150 0)" />
+      <text x="20" y="26" fill="#0A2463" font-size="14" font-weight="700">Draughtsman Civil</text>
+      <text x="20" y="44" fill="#D4A843" font-size="9.5" font-weight="700">Duration: 2 Years | Affiliation: NCVT</text>
+      <text x="20" y="68" fill="#4a5568" font-size="10.5" width="330">Civil surveying labs, blueprints, estimation, materials, and comprehensive AutoCAD designing.</text>
+      
+      <!-- Badges -->
+      <rect x="20" y="115" width="75" height="22" rx="4" fill="#f0fff4" />
+      <text x="57" y="129" fill="#27AE60" font-size="9" font-weight="700" text-anchor="middle">Seats: 21</text>
+
+      <rect x="105" y="115" width="75" height="22" rx="4" fill="#ebf8ff" />
+      <text x="142" y="129" fill="#2b6cb0" font-size="9" font-weight="700" text-anchor="middle">Metric (SSLC)</text>
+    </g>
+
+    <!-- Trade Card 3: Electronic Mechanic -->
+    <g id="Trade Card - Electronic" transform="translate(25, 485)">
+      <rect width="370" height="145" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+      <text x="20" y="26" fill="#0A2463" font-size="14" font-weight="700">Electronic Mechanic</text>
+      <text x="20" y="44" fill="#718096" font-size="9.5" font-weight="700">Duration: 2 Years | Affiliation: NCVT</text>
+      <text x="20" y="68" fill="#4a5568" font-size="10.5" width="330">Covers digital circuits, microcontrollers, troubleshooting, smart setups, and solar systems.</text>
+    </g>
+
+    <!-- Footer -->
+    <g id="Footer" transform="translate(0, 680)">
+      <rect width="420" height="100" fill="#071A4A" />
+      <text x="25" y="45" fill="#ffffff" font-size="10.5">NCVT Training Center Code: PR32000185</text>
+      <text x="25" y="62" fill="#a0aec0" font-size="8.5">MES ITI Mundur Academics Section</text>
+    </g>
+  </g>
+
+  <!-- FRAME 3: ADMISSIONS (admissions.html) -->
+  <g id="Frame - Admissions" transform="translate(970, 60)">
+    <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
+    <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Admissions (420 x 780)</text>
+
+    <!-- Navbar -->
+    <g id="Navbar" transform="translate(0, 0)">
+      <rect width="420" height="60" fill="#0A2463" rx="12" clip-path="inset(0 0 720 0)" />
+      <text x="25" y="35" fill="#ffffff" font-size="14" font-weight="700">Admissions Portal</text>
+    </g>
+
+    <g id="Intro" transform="translate(25, 80)">
+      <text x="0" y="25" fill="#0A2463" font-size="18" font-weight="800">Online Enquiry Form</text>
+      <text x="0" y="42" fill="#718096" font-size="10.5">Submit your entry. Fields marked with * are required.</text>
+    </g>
+
+    <!-- Form Container -->
+    <g id="Enquiry Form" transform="translate(25, 140)">
+      <!-- Name -->
+      <g transform="translate(0, 0)">
+        <rect width="370" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+        <text x="15" y="28" fill="#2d3748" font-size="12">Meera Nambiar</text>
+        <rect x="12" y="-9" width="68" height="18" rx="3" fill="#ffffff" />
+        <text x="16" y="4" fill="#0A2463" font-size="10" font-weight="600">Full Name *</text>
+      </g>
+
+      <!-- Date of Birth -->
+      <g transform="translate(0, 58)">
+        <rect width="370" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+        <text x="15" y="28" fill="#2d3748" font-size="12">2006-08-14</text>
+        <rect x="12" y="-9" width="78" height="18" rx="3" fill="#ffffff" />
+        <text x="16" y="4" fill="#0A2463" font-size="10" font-weight="600">Date of Birth *</text>
+      </g>
+
+      <!-- Phone -->
+      <g transform="translate(0, 116)">
+        <rect width="370" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+        <text x="15" y="28" fill="#2d3748" font-size="12">9447623188</text>
+        <rect x="12" y="-9" width="88" height="18" rx="3" fill="#ffffff" />
+        <text x="16" y="4" fill="#0A2463" font-size="10" font-weight="600">Phone Number *</text>
+      </g>
+
+      <!-- Trade Selection -->
+      <g transform="translate(0, 174)">
+        <rect width="370" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+        <text x="15" y="28" fill="#2d3748" font-size="12">Draughtsman Civil</text>
+        <path d="M 340 20 L 345 26 L 350 20" fill="none" stroke="#4a5568" stroke-width="2" />
+        <rect x="12" y="-9" width="108" height="18" rx="3" fill="#ffffff" />
+        <text x="16" y="4" fill="#0A2463" font-size="10" font-weight="600">Trade Preference 1 *</text>
+      </g>
+
+      <!-- Address -->
+      <g transform="translate(0, 232)">
+        <rect width="370" height="75" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+        <text x="15" y="28" fill="#2d3748" font-size="12">Nambiar Villa, Mundur, Palakkad</text>
+        <rect x="12" y="-9" width="108" height="18" rx="3" fill="#ffffff" />
+        <text x="16" y="4" fill="#0A2463" font-size="10" font-weight="600">Permanent Address *</text>
+      </g>
+
+      <!-- Submit Button -->
+      <g transform="translate(0, 335)">
+        <rect width="370" height="48" rx="6" fill="#0A2463" />
+        <text x="185" y="29" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">Submit Admission Enquiry</text>
+      </g>
+    </g>
+
+    <!-- Footer -->
+    <g id="Footer" transform="translate(0, 680)">
+      <rect width="420" height="100" fill="#071A4A" />
+      <text x="25" y="40" fill="#ffffff" font-size="10.5">Admission Helpdesk: +91 491 2832248</text>
+      <text x="25" y="60" fill="#a0aec0" font-size="9">info@mesitimundur.org</text>
+    </g>
+  </g>
+
+  <!-- ==================== ROW 2 ==================== -->
+
+  <!-- FRAME 4: PLACEMENTS (placements.html) -->
+  <g id="Frame - Placements" transform="translate(50, 880)">
+    <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
+    <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Placements (420 x 780)</text>
+
+    <!-- Navbar -->
+    <g id="Navbar" transform="translate(0, 0)">
+      <rect width="420" height="60" fill="#0A2463" rx="12" clip-path="inset(0 0 720 0)" />
+      <text x="25" y="35" fill="#ffffff" font-size="14" font-weight="700">Placements &amp; Careers</text>
+    </g>
+
+    <g id="Page Title" transform="translate(25, 80)">
+      <text x="0" y="25" fill="#0A2463" font-size="18" font-weight="800">Placement Records</text>
+      <text x="0" y="42" fill="#718096" font-size="10.5">Accredited training and strong industry linkages.</text>
+    </g>
+
+    <!-- Recruiters -->
+    <g id="Hiring Recruiters" transform="translate(25, 145)">
+      <text x="0" y="15" fill="#4a5568" font-size="12" font-weight="700">Key Recruiter Associations</text>
+      <g transform="translate(0, 25)">
+        <!-- Recruiter Box 1 -->
+        <rect width="110" height="45" rx="4" fill="#f7fafc" stroke="#edf2f7" stroke-width="1" />
+        <text x="55" y="27" fill="#718096" font-size="11" font-weight="700" text-anchor="middle">KSEB</text>
+        
+        <!-- Recruiter Box 2 -->
+        <rect x="130" y="0" width="110" height="45" rx="4" fill="#f7fafc" stroke="#edf2f7" stroke-width="1" />
+        <text x="185" y="27" fill="#718096" font-size="11" font-weight="700" text-anchor="middle">L&amp;T</text>
+
+        <!-- Recruiter Box 3 -->
+        <rect x="260" y="0" width="110" height="45" rx="4" fill="#f7fafc" stroke="#edf2f7" stroke-width="1" />
+        <text x="315" y="27" fill="#718096" font-size="11" font-weight="700" text-anchor="middle">KELTRON</text>
+      </g>
+    </g>
+
+    <!-- Placed Testimonials -->
+    <g id="Trainee Success" transform="translate(25, 245)">
+      <text x="0" y="15" fill="#4a5568" font-size="12" font-weight="700">Alumni Success Stories</text>
+
+      <!-- Sajid Khan -->
+      <g transform="translate(0, 25)">
+        <rect width="370" height="85" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="30" cy="42" r="16" fill="#ebf8ff" />
+        <text x="30" y="46" fill="#2b6cb0" font-size="11.5" font-weight="700" text-anchor="middle">SK</text>
+        <text x="60" y="25" fill="#2d3748" font-size="11.5" font-weight="700">Sajid Khan</text>
+        <text x="60" y="40" fill="#718096" font-size="9">Electrician (Batch 2021-23) - KSEB Tech</text>
+        <text x="60" y="58" fill="#4a5568" font-size="9" font-style="italic">"Panel connections training prepared me for sub-station needs."</text>
+      </g>
+
+      <!-- Meera Nambiar -->
+      <g transform="translate(0, 125)">
+        <rect width="370" height="85" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="30" cy="42" r="16" fill="#fefcbf" />
+        <text x="30" y="46" fill="#b7791f" font-size="11.5" font-weight="700" text-anchor="middle">MN</text>
+        <text x="60" y="25" fill="#2d3748" font-size="11.5" font-weight="700">Meera Nambiar</text>
+        <text x="60" y="40" fill="#718096" font-size="9">Draughtsman Civil (Batch 2022-24) - L&amp;T</text>
+        <text x="60" y="58" fill="#4a5568" font-size="9" font-style="italic">"Mastering AutoCAD and drawings at the campus gave me a huge edge."</text>
+      </g>
+
+      <!-- Akhil K. -->
+      <g transform="translate(0, 225)">
+        <rect width="370" height="85" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="30" cy="42" r="16" fill="#faf5ff" />
+        <text x="30" y="46" fill="#6b46c1" font-size="11.5" font-weight="700" text-anchor="middle">AK</text>
+        <text x="60" y="25" fill="#2d3748" font-size="11.5" font-weight="700">Akhil K.</text>
+        <text x="60" y="40" fill="#718096" font-size="9">Electronic Mechanic (Batch 2023-25) - Keltron</text>
+        <text x="60" y="58" fill="#4a5568" font-size="9" font-style="italic">"The placement cell is exceptional. The mock interviews helped immensely."</text>
+      </g>
+    </g>
+
+    <!-- Footer -->
+    <g id="Footer" transform="translate(0, 680)">
+      <rect width="420" height="100" fill="#071A4A" />
+      <text x="25" y="45" fill="#ffffff" font-size="10.5">Placement Support Officer: Prof. K. A. Latheef</text>
+      <text x="25" y="62" fill="#a0aec0" font-size="8.5">Email: placements@mesitimundur.org</text>
+    </g>
+  </g>
+
+  <!-- FRAME 5: CONTACT US (contact.html) -->
+  <g id="Frame - Contact Page" transform="translate(510, 880)">
+    <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
+    <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Contact Us (420 x 780)</text>
+
+    <!-- Navbar -->
+    <g id="Navbar" transform="translate(0, 0)">
+      <rect width="420" height="60" fill="#0A2463" rx="12" clip-path="inset(0 0 720 0)" />
+      <text x="25" y="35" fill="#ffffff" font-size="14" font-weight="700">Contact Us</text>
+    </g>
+
+    <g id="Page Title" transform="translate(25, 80)">
+      <text x="0" y="25" fill="#0A2463" font-size="18" font-weight="800">Send Us a Message</text>
+      <text x="0" y="42" fill="#718096" font-size="10.5">Have enquiries? Connect with our administration desk.</text>
+    </g>
+
+    <!-- Form -->
+    <g id="Contact Form" transform="translate(25, 140)">
+      <!-- Name -->
+      <g transform="translate(0, 0)">
+        <rect width="370" height="44" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+        <text x="15" y="27" fill="#2d3748" font-size="12">Rahul K.</text>
+        <rect x="12" y="-9" width="68" height="18" rx="3" fill="#ffffff" />
+        <text x="16" y="4" fill="#0A2463" font-size="10" font-weight="600">Full Name *</text>
+      </g>
+
+      <!-- Email -->
+      <g transform="translate(0, 58)">
+        <rect width="370" height="44" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+        <text x="15" y="27" fill="#2d3748" font-size="12">rahul@gmail.com</text>
+        <rect x="12" y="-9" width="92" height="18" rx="3" fill="#ffffff" />
+        <text x="16" y="4" fill="#0A2463" font-size="10" font-weight="600">Email Address *</text>
+      </g>
+
+      <!-- Message text -->
+      <g transform="translate(0, 116)">
+        <rect width="370" height="75" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+        <text x="15" y="27" fill="#2d3748" font-size="12">Requesting course syllabus details...</text>
+        <rect x="12" y="-9" width="88" height="18" rx="3" fill="#ffffff" />
+        <text x="16" y="4" fill="#0A2463" font-size="10" font-weight="600">Your Message *</text>
+      </g>
+
+      <!-- Submit button -->
+      <g transform="translate(0, 205)">
+        <rect width="370" height="44" rx="6" fill="#0A2463" />
+        <text x="185" y="26" fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle">Submit Message</text>
+      </g>
+    </g>
+
+    <!-- Campus Location Details -->
+    <g id="Campus Location" transform="translate(25, 415)">
+      <text x="0" y="15" fill="#0A2463" font-size="13" font-weight="700">Office Contact Details</text>
+      
+      <!-- Address Block -->
+      <g transform="translate(0, 25)">
+        <text x="0" y="15" fill="#2d3748" font-size="11" font-weight="700">Address:</text>
+        <text x="0" y="32" fill="#4a5568" font-size="10.5">Dr. P.K. Abdul Ghafoor Memorial M.E.S Pvt ITI</text>
+        <text x="0" y="48" fill="#718096" font-size="10.5">Mundur, Palakkad, Kerala - 678592</text>
+      </g>
+
+      <!-- Telephone Block -->
+      <g transform="translate(0, 95)">
+        <text x="0" y="15" fill="#2d3748" font-size="11" font-weight="700">Telephone / Email:</text>
+        <text x="0" y="32" fill="#4a5568" font-size="10.5">Phone: +91 491 2832248, +91 9447623188</text>
+        <text x="0" y="48" fill="#718096" font-size="10.5">Email: mesitimundur@gmail.com</text>
+      </g>
+    </g>
+
+    <!-- Footer -->
+    <g id="Footer" transform="translate(0, 680)">
+      <rect width="420" height="100" fill="#071A4A" />
+      <text x="25" y="45" fill="#ffffff" font-size="10.5">Working Hours: 09:00 AM - 04:00 PM</text>
+      <text x="25" y="62" fill="#a0aec0" font-size="8.5">Office Secretary: Prof. K. A. Latheef</text>
+    </g>
+  </g>
+
+  <!-- FRAME 6: ABOUT US (about.html) -->
+  <g id="Frame - About Page" transform="translate(970, 880)">
+    <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
+    <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: About Us (420 x 780)</text>
+
+    <!-- Navbar -->
+    <g id="Navbar" transform="translate(0, 0)">
+      <rect width="420" height="60" fill="#0A2463" rx="12" clip-path="inset(0 0 720 0)" />
+      <text x="25" y="35" fill="#ffffff" font-size="14" font-weight="700">About Us</text>
+    </g>
+
+    <g id="Page Title" transform="translate(25, 80)">
+      <text x="0" y="25" fill="#0A2463" font-size="18" font-weight="800">Our Profile</text>
+      <text x="0" y="42" fill="#718096" font-size="10.5">Building skill foundations under the MES heritage.</text>
+    </g>
+
+    <!-- Profile Text -->
+    <g id="Vision &amp; Mission" transform="translate(25, 145)">
+      <!-- Vision -->
+      <rect width="370" height="90" rx="6" fill="#f7fafc" stroke="#edf2f7" stroke-width="1" />
+      <text x="18" y="24" fill="#0A2463" font-size="12" font-weight="700">Our Vision</text>
+      <text x="18" y="44" fill="#4a5568" font-size="10" width="330">To be a premier institution in vocational training, delivering skilled human resource assets to meet global industrial standards.</text>
+      
+      <!-- Mission -->
+      <g transform="translate(0, 105)">
+        <rect width="370" height="90" rx="6" fill="#f7fafc" stroke="#edf2f7" stroke-width="1" />
+        <text x="18" y="24" fill="#0A2463" font-size="12" font-weight="700">Our Mission</text>
+        <text x="18" y="44" fill="#4a5568" font-size="10" width="330">Provide excellent infrastructure, state-of-the-art tools, and skilled instruction to foster technical expertise and entrepreneurship.</text>
+      </g>
+    </g>
+
+    <!-- History -->
+    <g id="MES Heritage" transform="translate(25, 365)">
+      <text x="0" y="15" fill="#0A2463" font-size="13" font-weight="700">Muslim Educational Society (MES)</text>
+      <text x="0" y="35" fill="#4a5568" font-size="10.5" width="370">Established in 1964, the Muslim Educational Society (MES) has been a pioneer in high-quality educational infrastructure in Kerala. The Dr. P.K. Abdul Ghafoor Memorial ITI continues this legacy by molding skilled technicians.</text>
+    </g>
+
+    <!-- Affiliation Details -->
+    <g id="Statutory Affiliation" transform="translate(25, 490)">
+      <rect width="370" height="120" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+      <text x="18" y="25" fill="#0A2463" font-size="12" font-weight="700">Statutory Affiliation Details</text>
+      
+      <g transform="translate(18, 40)">
+        <text x="0" y="15" fill="#718096" font-size="9.5">Affiliation Authority:</text>
+        <text x="130" y="15" fill="#2d3748" font-size="9.5" font-weight="700">NCVT, Govt. of India</text>
+        
+        <text x="0" y="35" fill="#718096" font-size="9.5">Trainee Code / Affil. ID:</text>
+        <text x="130" y="35" fill="#2d3748" font-size="9.5" font-weight="700">PR32000185</text>
+        
+        <text x="0" y="55" fill="#718096" font-size="9.5">Managing Body:</text>
+        <text x="130" y="55" fill="#2d3748" font-size="9.5" font-weight="700">MES Kerala State Committee</text>
+      </g>
+    </g>
+
+    <!-- Footer -->
+    <g id="Footer" transform="translate(0, 680)">
+      <rect width="420" height="100" fill="#071A4A" />
+      <text x="25" y="45" fill="#ffffff" font-size="10.5">Dr. P.K. Abdul Ghafoor Memorial M.E.S ITI</text>
+      <text x="25" y="62" fill="#a0aec0" font-size="8.5">Mundur, Palakkad - NCVT Centre Code: 185</text>
+    </g>
+  </g>
+</svg>
