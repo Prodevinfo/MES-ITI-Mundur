@@ -118,7 +118,7 @@
     </g>
   </g>
 
-  <!-- FRAME 2: TRADES & COURSES (trades.html) -->
+  <!-- FRAME 2: TRADES & COURSES (trades-courses.html) -->
   <g id="Frame - Trades Catalog" transform="translate(510, 60)">
     <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
     <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Trades &amp; Courses (420 x 780)</text>
@@ -182,7 +182,7 @@
     </g>
   </g>
 
-  <!-- FRAME 3: ADMISSIONS (admissions.html) -->
+  <!-- FRAME 3: ADMISSIONS (apply-now.html) -->
   <g id="Frame - Admissions" transform="translate(970, 60)">
     <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
     <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Admissions (420 x 780)</text>
@@ -335,7 +335,7 @@
     </g>
   </g>
 
-  <!-- FRAME 5: CONTACT US (contact.html) -->
+  <!-- FRAME 5: CONTACT US (contact-us.html) -->
   <g id="Frame - Contact Page" transform="translate(510, 880)">
     <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
     <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Contact Us (420 x 780)</text>
@@ -411,7 +411,7 @@
     </g>
   </g>
 
-  <!-- FRAME 6: ABOUT US (about.html) -->
+  <!-- FRAME 6: ABOUT US (about-us.html) -->
   <g id="Frame - About Page" transform="translate(970, 880)">
     <rect width="420" height="780" rx="12" fill="#ffffff" stroke="#333" stroke-width="2" />
     <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: About Us (420 x 780)</text>

@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
   ];
 
   let notices = [
-    { id: 1, title: "Admissions Open for 2026-27", category: "Admission", link: "admissions.html" },
-    { id: 2, title: "AITT Practical Exam Schedule", category: "Exam", link: "blog.html" },
+    { id: 1, title: "Admissions Open for 2026-27", category: "Admission", link: "apply-now.html" },
+    { id: 2, title: "AITT Practical Exam Schedule", category: "Exam", link: "blog-events.html" },
     { id: 3, title: "Upcoming KSEB & L&T Campus Recruitment", category: "Placement", link: "placements.html" }
   ];
 
