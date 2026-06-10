@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" style="background-color: #1e1e1e; font-family: 'Inter', system-ui, sans-serif;">
+  <!-- Figma Style Workspace Background Grid -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2a2a2a" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="login-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2463" />
+      <stop offset="100%" stop-color="#050e24" />
+    </linearGradient>
+    <linearGradient id="btn-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A843" />
+      <stop offset="100%" stop-color="#B2872A" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Figma Canvas Labels -->
+  <text x="50" y="35" fill="#888" font-size="14" font-weight="600">ARTBOARDS / FRAMES</text>
+
+  <!-- FRAME 1: SIGN IN VIEW -->
+  <g id="Frame - Admin Sign In" transform="translate(50, 60)">
+    <!-- Frame Canvas -->
+    <rect width="420" height="780" rx="12" fill="url(#login-bg)" stroke="#333" stroke-width="2" />
+    <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Admin Sign In (420 x 780)</text>
+
+    <!-- Glassmorphic Login Card -->
+    <g id="Login Card" transform="translate(40, 140)">
+      <!-- Card background -->
+      <rect width="340" height="460" rx="16" fill="#0d1e4c" fill-opacity="0.5" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.1" />
+      
+      <!-- Logo & Title -->
+      <g id="Header" transform="translate(170, 45)">
+        <!-- Centered Logo (White Vector Icon) -->
+        <circle cx="0" cy="0" r="24" fill="#ffffff" fill-opacity="0.08" />
+        <path d="M -10 -8 L 10 -8 L 12 10 L 0 16 L -12 10 Z" fill="none" stroke="#ffffff" stroke-width="2" />
+        <path d="M -5 -3 L 5 -3 M -7 2 L 7 2" fill="none" stroke="#ffffff" stroke-width="2" />
+        
+        <text x="0" y="48" fill="#ffffff" font-size="20" font-weight="700" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">MES Private ITI</text>
+        <text x="0" y="68" fill="#a0aec0" font-size="12" font-weight="500" text-anchor="middle">Admin Portal Sign In</text>
+      </g>
+
+      <!-- Form Inputs -->
+      <g id="Form Group - Username" transform="translate(30, 160)">
+        <rect width="280" height="50" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-dasharray="none" stroke-width="1" stroke-opacity="0.12" />
+        <text x="15" y="31" fill="#ffffff" font-size="14">admin</text>
+        <!-- Floating Label -->
+        <rect x="12" y="-9" width="70" height="18" rx="3" fill="#0c193f" />
+        <text x="17" y="4" fill="#D4A843" font-size="11" font-weight="600">Username</text>
+      </g>
+
+      <g id="Form Group - Password" transform="translate(30, 230)">
+        <rect width="280" height="50" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-width="1" stroke-opacity="0.12" />
+        <text x="15" y="32" fill="#ffffff" font-size="16">••••••••</text>
+        <!-- Floating Label -->
+        <rect x="12" y="-9" width="66" height="18" rx="3" fill="#0b1739" />
+        <text x="17" y="4" fill="#D4A843" font-size="11" font-weight="600">Password</text>
+      </g>
+
+      <!-- Sign In Button -->
+      <g id="Button - Sign In" transform="translate(30, 310)">
+        <rect width="280" height="50" rx="8" fill="url(#btn-grad)" />
+        <text x="140" y="30" fill="#0A2463" font-size="15" font-weight="700" text-anchor="middle">Sign In  →</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- FRAME 2: DASHBOARD VIEW -->
+  <g id="Frame - Admin Dashboard" transform="translate(510, 60)">
+    <!-- Frame Canvas -->
+    <rect width="1020" height="780" rx="12" fill="#f5f7fa" stroke="#333" stroke-width="2" />
+    <text x="20" y="-15" fill="#aaa" font-size="12" font-weight="600">Frame: Admin Dashboard Overview (1020 x 780)</text>
+
+    <!-- Sidebar Menu Panel -->
+    <g id="Sidebar" transform="translate(0, 0)">
+      <rect width="240" height="780" fill="#071A4A" rx="12" clip-path="inset(0 240 0 0)" />
+      
+      <!-- Brand Logo -->
+      <g id="Brand" transform="translate(20, 30)">
+        <path d="M 0 -8 L 15 -8 L 17 6 L 0 12 L -17 6 Z" fill="none" stroke="#ffffff" stroke-width="2" />
+        <text x="26" y="2" fill="#ffffff" font-size="16" font-weight="700" font-family="'Plus Jakarta Sans', sans-serif">MES Pvt ITI</text>
+        <text x="26" y="16" fill="#a0aec0" font-size="10" font-weight="500">Admin Panel</text>
+      </g>
+
+      <!-- Menu Items -->
+      <g id="Menu List" transform="translate(15, 90)">
+        <!-- Overview (Active) -->
+        <g id="Menu Item - Overview" transform="translate(0, 0)">
+          <rect width="210" height="42" rx="6" fill="#ffffff" fill-opacity="0.08" />
+          <rect width="4" height="24" x="0" y="9" rx="2" fill="#D4A843" />
+          <!-- Icon placeholder (Dashboard Layout) -->
+          <rect x="18" y="13" width="16" height="16" fill="none" stroke="#ffffff" stroke-width="2" rx="2" />
+          <text x="46" y="26" fill="#ffffff" font-size="13" font-weight="600">Overview</text>
+        </g>
+        
+        <!-- Admissions -->
+        <g id="Menu Item - Admissions" transform="translate(0, 52)">
+          <rect x="18" y="13" width="16" height="16" fill="none" stroke="#a0aec0" stroke-width="2" rx="2" />
+          <text x="46" y="26" fill="#a0aec0" font-size="13" font-weight="500">Admissions</text>
+        </g>
+
+        <!-- Alumni -->
+        <g id="Menu Item - Alumni" transform="translate(0, 104)">
+          <circle cx="26" cy="21" r="8" fill="none" stroke="#a0aec0" stroke-width="2" />
+          <text x="46" y="26" fill="#a0aec0" font-size="13" font-weight="500">Alumni Network</text>
+        </g>
+
+        <!-- Announcements -->
+        <g id="Menu Item - Announcements" transform="translate(0, 156)">
+          <path d="M 18 26 L 26 21 L 26 15 L 18 20 Z" fill="none" stroke="#a0aec0" stroke-width="2" />
+          <text x="46" y="26" fill="#a0aec0" font-size="13" font-weight="500">Announcements</text>
+        </g>
+
+        <!-- Gallery -->
+        <g id="Menu Item - Gallery" transform="translate(0, 208)">
+          <rect x="18" y="13" width="16" height="16" fill="none" stroke="#a0aec0" stroke-width="2" rx="1" />
+          <circle cx="22" cy="17" r="2" fill="#a0aec0" />
+          <text x="46" y="26" fill="#a0aec0" font-size="13" font-weight="500">Gallery Manager</text>
+        </g>
+
+        <!-- Contact Messages -->
+        <g id="Menu Item - Contact" transform="translate(0, 260)">
+          <rect x="18" y="14" width="16" height="13" fill="none" stroke="#a0aec0" stroke-width="2" rx="1.5" />
+          <path d="M 18 14 L 26 20 L 34 14" fill="none" stroke="#a0aec0" stroke-width="1.5" />
+          <text x="46" y="26" fill="#a0aec0" font-size="13" font-weight="500">Contact Messages</text>
+        </g>
+      </g>
+
+      <!-- Sidebar Footer / Logout -->
+      <g id="Logout Button" transform="translate(15, 715)">
+        <rect x="18" y="13" width="14" height="14" fill="none" stroke="#e53e3e" stroke-width="2" />
+        <text x="46" y="26" fill="#e53e3e" font-size="13" font-weight="600">Sign Out</text>
+      </g>
+    </g>
+
+    <!-- Main Content Area Wrapper -->
+    <g id="Content Wrapper" transform="translate(240, 0)">
+      
+      <!-- Topbar Header -->
+      <g id="Topbar" transform="translate(0, 0)">
+        <rect width="780" height="70" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <text x="30" y="42" fill="#0A2463" font-size="18" font-weight="700" font-family="'Plus Jakarta Sans', sans-serif">Dashboard Overview</text>
+        
+        <!-- Profile info -->
+        <g id="User Profile" transform="translate(560, 15)">
+          <text x="130" y="18" fill="#2d3748" font-size="13" font-weight="700" text-anchor="end">Prof. Latheef</text>
+          <text x="130" y="32" fill="#718096" font-size="10" font-weight="500" text-anchor="end">Administrator</text>
+          <!-- Avatar -->
+          <circle cx="160" cy="20" r="18" fill="#D4A843" />
+          <text x="160" y="25" fill="#0A2463" font-size="14" font-weight="700" text-anchor="middle">L</text>
+        </g>
+      </g>
+
+      <!-- Page Scrollable Body -->
+      <g id="Dashboard Body" transform="translate(30, 95)">
+        
+        <!-- Stats Row -->
+        <g id="Stats Grid">
+          <!-- Card 1: Enquiries -->
+          <g id="Stat Card - Enquiries" transform="translate(0, 0)">
+            <rect width="132" height="85" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+            <text x="15" y="30" fill="#718096" font-size="11" font-weight="500">Total Enquiries</text>
+            <text x="15" y="62" fill="#0A2463" font-size="24" font-weight="800">14</text>
+            <rect x="90" y="42" width="28" height="28" rx="6" fill="#ebf8ff" />
+            <rect x="96" y="48" width="16" height="16" fill="none" stroke="#2b6cb0" stroke-width="2" />
+          </g>
+
+          <!-- Card 2: Alumni -->
+          <g id="Stat Card - Alumni" transform="translate(145, 0)">
+            <rect width="132" height="85" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+            <text x="15" y="30" fill="#718096" font-size="11" font-weight="500">Pending Alumni</text>
+            <text x="15" y="62" fill="#0A2463" font-size="24" font-weight="800">3</text>
+            <rect x="90" y="42" width="28" height="28" rx="6" fill="#fefcbf" />
+            <circle cx="104" cy="56" r="6" fill="none" stroke="#b7791f" stroke-width="2" />
+          </g>
+
+          <!-- Card 3: Notices -->
+          <g id="Stat Card - Notices" transform="translate(290, 0)">
+            <rect width="132" height="85" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+            <text x="15" y="30" fill="#718096" font-size="11" font-weight="500">Active Notices</text>
+            <text x="15" y="62" fill="#0A2463" font-size="24" font-weight="800">3</text>
+            <rect x="90" y="42" width="28" height="28" rx="6" fill="#f0fff4" />
+            <path d="M 98 62 L 104 57 L 104 51 L 98 56 Z" fill="none" stroke="#2f855a" stroke-width="2" />
+          </g>
+
+          <!-- Card 4: Mail -->
+          <g id="Stat Card - Mail" transform="translate(435, 0)">
+            <rect width="132" height="85" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+            <text x="15" y="30" fill="#718096" font-size="11" font-weight="500">Contact Mail</text>
+            <text x="15" y="62" fill="#0A2463" font-size="24" font-weight="800">8</text>
+            <rect x="90" y="42" width="28" height="28" rx="6" fill="#faf5ff" />
+            <rect x="96" y="49" width="16" height="13" fill="none" stroke="#6b46c1" stroke-width="2" />
+          </g>
+
+          <!-- Card 5: Gallery -->
+          <g id="Stat Card - Gallery" transform="translate(580, 0)">
+            <rect width="132" height="85" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+            <text x="15" y="30" fill="#718096" font-size="11" font-weight="500">Gallery Items</text>
+            <text x="15" y="62" fill="#0A2463" font-size="24" font-weight="800">10</text>
+            <rect x="90" y="42" width="28" height="28" rx="6" fill="#fff5f5" />
+            <rect x="96" y="48" width="16" height="16" fill="none" stroke="#c53030" stroke-width="2" />
+          </g>
+        </g>
+
+        <!-- Main Dashboard Split Grid -->
+        <g id="Dashboard Grid" transform="translate(0, 110)">
+          <!-- Left Main Card: Recent Admissions -->
+          <g id="Card - Recent Enquiries">
+            <rect width="460" height="430" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+            <text x="20" y="35" fill="#0A2463" font-size="15" font-weight="700">Recent Admission Enquiries</text>
+            
+            <!-- Table Header -->
+            <g transform="translate(20, 60)">
+              <rect width="420" height="32" fill="#f7fafc" rx="4" />
+              <text x="10" y="20" fill="#718096" font-size="11" font-weight="700">Trainee</text>
+              <text x="150" y="20" fill="#718096" font-size="11" font-weight="700">Trade Preference</text>
+              <text x="290" y="20" fill="#718096" font-size="11" font-weight="700">Date</text>
+              <text x="360" y="20" fill="#718096" font-size="11" font-weight="700">Status</text>
+            </g>
+
+            <!-- Table Rows -->
+            <g transform="translate(20, 100)">
+              <!-- Row 1 -->
+              <g transform="translate(0, 0)">
+                <text x="10" y="22" fill="#2d3748" font-size="12" font-weight="600">Rahul K.</text>
+                <text x="150" y="22" fill="#4a5568" font-size="12">Electrician</text>
+                <text x="290" y="22" fill="#718096" font-size="11">2026-06-09</text>
+                <!-- Status Badge -->
+                <rect x="360" y="6" width="50" height="20" rx="10" fill="#feebc8" />
+                <text x="385" y="20" fill="#c05621" font-size="10" font-weight="700" text-anchor="middle">Pending</text>
+                <line x1="0" y1="36" x2="420" y2="36" stroke="#edf2f7" stroke-width="1" />
+              </g>
+
+              <!-- Row 2 -->
+              <g transform="translate(0, 48)">
+                <text x="10" y="22" fill="#2d3748" font-size="12" font-weight="600">Ananya Das</text>
+                <text x="150" y="22" fill="#4a5568" font-size="12">Draughtsman Civil</text>
+                <text x="290" y="22" fill="#718096" font-size="11">2026-06-08</text>
+                <!-- Status Badge -->
+                <rect x="360" y="6" width="50" height="20" rx="10" fill="#c6f6d5" />
+                <text x="385" y="20" fill="#22543d" font-size="10" font-weight="700" text-anchor="middle">Admitted</text>
+                <line x1="0" y1="36" x2="420" y2="36" stroke="#edf2f7" stroke-width="1" />
+              </g>
+
+              <!-- Row 3 -->
+              <g transform="translate(0, 96)">
+                <text x="10" y="22" fill="#2d3748" font-size="12" font-weight="600">Muhammed Shafi</text>
+                <text x="150" y="22" fill="#4a5568" font-size="12">Electrician</text>
+                <text x="290" y="22" fill="#718096" font-size="11">2026-06-07</text>
+                <!-- Status Badge -->
+                <rect x="360" y="6" width="50" height="20" rx="10" fill="#feebc8" />
+                <text x="385" y="20" fill="#c05621" font-size="10" font-weight="700" text-anchor="middle">Pending</text>
+                <line x1="0" y1="36" x2="420" y2="36" stroke="#edf2f7" stroke-width="1" />
+              </g>
+
+              <!-- Row 4 -->
+              <g transform="translate(0, 144)">
+                <text x="10" y="22" fill="#2d3748" font-size="12" font-weight="600">Sneha Wilson</text>
+                <text x="150" y="22" fill="#4a5568" font-size="12">Electronic Mechanic</text>
+                <text x="290" y="22" fill="#718096" font-size="11">2026-06-06</text>
+                <!-- Status Badge -->
+                <rect x="360" y="6" width="50" height="20" rx="10" fill="#fed7d7" />
+                <text x="385" y="20" fill="#9b2c2c" font-size="10" font-weight="700" text-anchor="middle">Rejected</text>
+                <line x1="0" y1="36" x2="420" y2="36" stroke="#edf2f7" stroke-width="1" />
+              </g>
+            </g>
+          </g>
+
+          <!-- Right Sidebar Card: Quick Actions -->
+          <g id="Card - Quick Actions" transform="translate(480, 0)">
+            <rect width="230" height="430" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+            <text x="20" y="35" fill="#0A2463" font-size="15" font-weight="700">Quick Actions</text>
+            
+            <!-- Actions List -->
+            <g transform="translate(20, 60)">
+              <!-- Action 1 -->
+              <g transform="translate(0, 0)">
+                <rect width="190" height="46" rx="6" fill="#0A2463" />
+                <text x="95" y="28" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">Post Announcement</text>
+              </g>
+              
+              <!-- Action 2 -->
+              <g transform="translate(0, 62)">
+                <rect width="190" height="46" rx="6" fill="none" stroke="#0A2463" stroke-width="2" />
+                <text x="95" y="28" fill="#0A2463" font-size="12" font-weight="700" text-anchor="middle">Visit Live Site</text>
+              </g>
+
+              <!-- Action 3 -->
+              <g transform="translate(0, 124)">
+                <rect width="190" height="46" rx="6" fill="none" stroke="#D4A843" stroke-width="2" />
+                <text x="95" y="28" fill="#D4A843" font-size="12" font-weight="700" text-anchor="middle">View Sitemap</text>
+              </g>
+            </g>
+
+            <!-- Server Status info box -->
+            <g transform="translate(20, 260)">
+              <rect width="190" height="140" rx="8" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1" />
+              <text x="15" y="30" fill="#4a5568" font-size="12" font-weight="700">Database Info</text>
+              
+              <text x="15" y="60" fill="#718096" font-size="11">Connection Status</text>
+              <circle cx="150" cy="56" r="5" fill="#48bb78" />
+              <text x="160" y="60" fill="#48bb78" font-size="10" font-weight="700">Live</text>
+              
+              <text x="15" y="85" fill="#718096" font-size="11">Mock Mode</text>
+              <text x="175" y="85" fill="#4a5568" font-size="11" font-weight="600" text-anchor="end">Enabled</text>
+
+              <text x="15" y="110" fill="#718096" font-size="11">Last Backed Up</text>
+              <text x="175" y="110" fill="#4a5568" font-size="11" font-weight="600" text-anchor="end">Just Now</text>
+            </g>
+          </g>
+        </g>
+
+      </g>
+    </g>
+  </g>
+</svg>
